@@ -41,6 +41,8 @@ $ mvn clean package
 
 5. Ahora cada vez que hagas un cambio puedes hacer mvn clean verify, y se subirán los cambios al weblogic.
 
+## NOTAS DE DESARROLLO
+1. Cada vez que se cree un objeto POF, como se ha desactivado el generatePof debido a un bug, hay que añadir el objeto a la configuración de pof-config.xml (ahí se encuentra definido también el objeto de ejemplo Person).
 
 # ANTIGUO README
 
