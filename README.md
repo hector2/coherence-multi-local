@@ -1,8 +1,46 @@
+# PASOS
+
+## Instalar coherence
+
+1. [_Instalacion de Weblogic con Coherence_][instalacion-coherence]
+2. Hay que seleccionar la opcion en la que vengan los dos. Abrir consola de comandos con administrador, y hacer java -jar <jar descargado>
+3. En la instalación, marcar la casilla de "extensions Coherence Cluster".
+4. Por comodidad, poner de usuario weblogic y de contraseña welcome1
+5. Siguiente siguiente, que cree el dominio por defecto. Para ejecutar la consola, hay que ejecutar en la carpeta del dominio el startweblogic.cmd
+
+## Probar proyecto
+NOTA: en los pom hay una parte de repositorios que apunta al maven de oracle, posiblemente haya que borrar estos repositorios para que use los de inditex y no hayan problemas raros.
+
+1. Instalar el plugin personalizado en tu repositorio local.
+
+```
+$ cd gar-to-classpath-plugin/
+$ mvn clean install
+$ cd ..
+```
+
+2. Compilar (para ver si todo va bien). Esto generará un EAR, que es posible desplegar en la consola de Weblogic manualmente en caso de que el siguiente paso no funcione. La consola se encuentra en http://localhost:7001/console
+
+```
+$ mvn clean package
+```
+
+3. Instalar en el weblogic
+
+```
+# mvn clean verify -Duser=weblogic -Dpassword=weblogic1
+```
+
+4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/ci-example-app/myservlet
+
+
+# ANTIGUO README
+
 ## Building a Real Java EE + Oracle Coherence Application with Maven
 
 The repository is based on the 
 [_Building a Real Application with Maven_][real-application-chapter] chapter of the 
-[_Oracle� Fusion Middleware Developing Applications Using Continuous Integration_][ci-manual] manual.
+[_Oracle® Fusion Middleware Developing Applications Using Continuous Integration_][ci-manual] manual.
 
 The example describes how to build a web application that uses data stored in a Coherence cache. At the same time this repository 
 includes a few differences:
@@ -101,3 +139,4 @@ http://localhost:7001/ci-example-app/myservlet
 [ci-manual]: https://docs.oracle.com/middleware/1221/core/MAVEN/toc.htm
 [real-application-chapter]: https://docs.oracle.com/middleware/1221/core/MAVEN/real_app.htm#MAVEN8917
 [oracle-maven-repo-manual]: http://docs.oracle.com/middleware/1221/core/MAVEN/config_maven_repo.htm#CACJADFE
+[instalacion-coherence]: https://www.oracle.com/technetwork/middleware/coherence/downloads/index.html
