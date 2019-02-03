@@ -1,3 +1,6 @@
+# REQUERIMIENTOS
+Yo he usado Java 8, Maven 3.2.5, y la última instalación de Weblogic + Coherence.
+
 # PASOS
 
 ## Instalar coherence
