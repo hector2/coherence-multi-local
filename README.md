@@ -37,7 +37,7 @@ $ mvn clean package
 3. Instalar en el weblogic
 
 ```
-# mvn clean verify -Duser=weblogic -Dpassword=weblogic1
+# mvn clean verify -Duser=weblogic -Dpassword=welcome1
 ```
 
 4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/ci-example-app/myservlet
