@@ -1,3 +1,6 @@
+# REQUERIMIENTOS
+Yo he usado Java 8, Maven 3.2.5, y la última instalación de Weblogic + Coherence.
+
 # PASOS
 
 ## Instalar coherence
@@ -7,6 +10,9 @@
 3. En la instalación, marcar la casilla de "extensions Coherence Cluster".
 4. Por comodidad, poner de usuario weblogic y de contraseña welcome1
 5. Siguiente siguiente, que cree el dominio por defecto. Para ejecutar la consola, hay que ejecutar en la carpeta del dominio el startweblogic.cmd
+    
+## Configurar maven (OPCIONAL)
+En el caso de no usar el repo de inditex, se usa el repo de oracle. Este repo requiere autenticación, así que mirar la carpeta CONFIG-MAVEN para saber como configurarlo. en user y pass se ponen las credenciales de vuestra cuenta de oracle.
 
 ## Probar proyecto
 NOTA: en los pom hay una parte de repositorios que apunta al maven de oracle, posiblemente haya que borrar estos repositorios para que use los de inditex y no hayan problemas raros.
