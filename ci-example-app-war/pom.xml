@@ -18,20 +18,15 @@
     <dependency>
       <groupId>oracle-fmw-ci-demo</groupId>
       <artifactId>ci-example-app-gar</artifactId>
-      <type>gar</type>
+      <version>1.0-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
+
     <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-web-api</artifactId>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>oracle-fmw-ci-demo</groupId>
-      	<artifactId>gar-to-classpath-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 </project>
