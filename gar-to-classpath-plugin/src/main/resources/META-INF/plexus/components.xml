@@ -1,0 +1,28 @@
+<component-set>
+  <components>
+
+    <component>
+      <role>org.apache.maven.artifact.handler.manager.ArtifactHandlerManager</role>
+      <implementation>org.apache.maven.artifact.handler.manager.DefaultArtifactHandlerManager</implementation>
+      <requirements>
+        <requirement>
+          <role>org.apache.maven.artifact.handler.ArtifactHandler</role>
+          <field-name>artifactHandlers</field-name>
+        </requirement>
+      </requirements>
+    </component>
+    
+    <component>
+      <role>org.apache.maven.artifact.handler.ArtifactHandler</role>
+      <role-hint>gar</role-hint>
+      <implementation>org.apache.maven.artifact.handler.DefaultArtifactHandler</implementation>
+	  <configuration>
+        <extension>gar</extension>
+        <type>gar</type>
+        <language>java</language>
+        <addedToClasspath>true</addedToClasspath>
+      </configuration>
+    </component>
+
+  </components>
+</component-set>

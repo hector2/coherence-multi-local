@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>oracle-fmw-ci-demo</groupId>
+  <artifactId>ci-example-app-war</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <parent>
+    <groupId>oracle-fmw-ci-demo</groupId>
+    <artifactId>ci-example-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <name>ci-example-app servlet module</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>oracle-fmw-ci-demo</groupId>
+      <artifactId>ci-example-app-gar</artifactId>
+      <type>gar</type>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>oracle-fmw-ci-demo</groupId>
+      	<artifactId>gar-to-classpath-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

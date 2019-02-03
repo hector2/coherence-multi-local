@@ -1,0 +1,7 @@
+<weblogic-application>
+	<module>
+    	<name>ci-example-app-gar.gar</name>
+        <type>GAR</type>
+        <path>lib/ci-example-app-gar.gar</path>
+    </module>
+</weblogic-application>
