@@ -23,29 +23,21 @@ $ .\startWebLogic.cmd
 En el caso de no usar el repo de inditex, se usa el repo de oracle. Este repo requiere autenticación, así que mirar la carpeta CONFIG-MAVEN para saber como configurarlo. en user y pass se ponen las credenciales de vuestra cuenta de oracle.
 
 ## Probar proyecto
-NOTA: en los pom hay una parte de repositorios que apunta al maven de oracle, posiblemente haya que borrar estos repositorios para que use los de inditex y no hayan problemas raros.
 
-1. Instalar el plugin personalizado en tu repositorio local.
 
-```
-$ cd gar-to-classpath-plugin/
-$ mvn clean install
-$ cd ..
-```
-
-2. Compilar (para ver si todo va bien). Esto generará un EAR, que es posible desplegar en la consola de Weblogic manualmente en caso de que el siguiente paso no funcione. La consola se encuentra en http://localhost:7001/console
+1. Compilar (para ver si todo va bien). Esto generará un EAR, que es posible desplegar en la consola de Weblogic manualmente en caso de que el siguiente paso no funcione. La consola se encuentra en http://localhost:7001/console
 
 ```
 $ mvn clean package
 ```
 
-3. Instalar en el weblogic
+2. Instalar en el weblogic
 
 ```
-# mvn clean verify -Duser=weblogic -Dpassword=welcome1
+$ mvn clean verify
 ```
 
-4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/ci-example-app/myservlet
+4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/persons
 
 5. Ahora cada vez que hagas un cambio puedes hacer mvn clean verify, y se subirán los cambios al weblogic.
 
