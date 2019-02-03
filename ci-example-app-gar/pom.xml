@@ -17,18 +17,29 @@
     <dependency>
       <groupId>com.oracle.coherence</groupId>
       <artifactId>coherence</artifactId>
+      <!--<version>12.1.2-0-0</version>-->
+      <version>${coherence.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.oracle.coherence</groupId>
+          <artifactId>maven-gar-plugin</artifactId>
+          <version>${coherence.version}</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>com.oracle.coherence</groupId>
         <artifactId>maven-gar-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <!--Due to a bug in the gar-maven-plugin, a processed pof-config.xml 
-          	  file won't be included into the EAR archive, the postprocessor has to be disabled-->
           <generatePof>false</generatePof>
         </configuration>
       </plugin>

@@ -1,18 +1,4 @@
 <?xml version="1.0"?>
-
-
-<!--
-Note: This XML document is an example Coherence Cache Configuration deployment
-descriptor that should be customized (or replaced) for your particular caching
-requirements. The cache mappings and schemes declared in this descriptor are
-strictly for demonstration purposes and are not required.
-
-For detailed information on each of the elements that can be used in this
-descriptor please see the Coherence Cache Configuration deployment descriptor
-guide included in the Coherence distribution or the "Cache Configuration
-Elements" page on the Coherence Wiki (http://wiki.tangosol.com).
--->
-
 <cache-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xmlns="http://xmlns.oracle.com/coherence/coherence-cache-config"
               xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-cache-config coherence-cache-config.xsd">
