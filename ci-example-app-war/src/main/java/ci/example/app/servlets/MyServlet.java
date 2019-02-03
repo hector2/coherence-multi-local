@@ -41,8 +41,8 @@ public class MyServlet extends HttpServlet {
 		// get the data
 		Set people = CacheWrapper.getInstance().getPeople();
 		PrintWriter out = response.getWriter();
-		out.write("<html><head><title>jaaaaaaaa</title></head><body>");
-		out.write("<h2>Add a new person</h2>");
+		out.write("<html><head><title>Servicio de cacheo de persona</title></head><body>");
+		out.write("<h2>Servicio de cacheo de personas</h2>");
 		out.write("<form name=\"myform\" method=\"POST\">");
 		out.write("ID:<input type=\"text\" name=\"id\"/><br/>");
 		out.write("Name:<input type=\"text\" name=\"name\"/><br/>");
