@@ -6,7 +6,10 @@ Yo he usado Java 8, Maven 3.2.5, y la última instalación de Weblogic + Coheren
 ## Instalar coherence
 
 1. [_Instalacion de Weblogic con Coherence_][instalacion-coherence]
-2. Hay que seleccionar la opcion en la que vengan los dos. Abrir consola de comandos con administrador, y hacer java -jar <jar descargado>
+2. Hay que seleccionar la opcion en la que vengan los dos. Abrir consola de comandos con administrador, y hacer 
+```
+$ java -jar <nombredejar.jar>
+```
 3. En la instalación, marcar la casilla de "extensions Coherence Cluster".
 4. Por comodidad, poner de usuario weblogic y de contraseña welcome1
 5. Siguiente siguiente, que cree el dominio por defecto. Para ejecutar la consola, hay que ejecutar en la carpeta del dominio el startweblogic.cmd
