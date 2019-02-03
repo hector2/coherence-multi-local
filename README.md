@@ -34,7 +34,7 @@ $ mvn clean package
 2. Instalar en el weblogic
 
 ```
-# mvn clean verify
+$ mvn clean verify
 ```
 
 4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/persons
