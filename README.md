@@ -13,6 +13,11 @@ $ java -jar <nombredejar.jar>
 3. En la instalación, marcar la casilla de "extensions Coherence Cluster".
 4. Por comodidad, poner de usuario weblogic y de contraseña welcome1
 5. Siguiente siguiente, que cree el dominio por defecto. Para ejecutar la consola, hay que ejecutar en la carpeta del dominio el startweblogic.cmd
+```
+$ cd C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain>
+$ .\startWebLogic.cmd
+```
+
     
 ## Configurar maven (OPCIONAL)
 En el caso de no usar el repo de inditex, se usa el repo de oracle. Este repo requiere autenticación, así que mirar la carpeta CONFIG-MAVEN para saber como configurarlo. en user y pass se ponen las credenciales de vuestra cuenta de oracle.
