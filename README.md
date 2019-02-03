@@ -39,6 +39,8 @@ $ mvn clean package
 
 4. Si todo ha ido bien, puedes consultar el servicio en http://localhost:7001/ci-example-app/myservlet
 
+5. Ahora cada vez que hagas un cambio puedes hacer mvn clean verify, y se subirán los cambios al weblogic.
+
 
 # ANTIGUO README
 
