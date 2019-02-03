@@ -52,7 +52,7 @@
     </dependencies>
   </dependencyManagement>
 
-  <repositories>
+  <!--<repositories>
     <repository>
       <id>maven.oracle.com</id>
       <name>maven.oracle.com</name>
@@ -78,7 +78,7 @@
         <enabled>false</enabled>
       </snapshots>
     </pluginRepository>
-  </pluginRepositories>
+  </pluginRepositories>-->
 
   <build>
     <pluginManagement>
