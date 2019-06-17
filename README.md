@@ -14,7 +14,7 @@ $ java -jar <nombredejar.jar>
 4. Por comodidad, poner de usuario weblogic y de contraseña welcome1
 5. Siguiente siguiente, que cree el dominio por defecto. Para ejecutar la consola, hay que ejecutar en la carpeta del dominio el startweblogic.cmd
 ```
-$ cd C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain>
+$ cd C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain
 $ .\startWebLogic.cmd
 ```
 
