@@ -17,7 +17,7 @@ $ java -jar <nombredejar.jar>
 $ cd C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain
 $ .\startWebLogic.cmd
 ```
-
+http://localhost:7001/console
     
 ## Configurar maven (OPCIONAL)
 En el caso de no usar el repo de inditex, se usa el repo de oracle. Este repo requiere autenticación, así que mirar la carpeta CONFIG-MAVEN para saber como configurarlo. en user y pass se ponen las credenciales de vuestra cuenta de oracle.
